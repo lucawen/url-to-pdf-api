@@ -87,11 +87,11 @@ const renderBodyObject = Joi.object({
     isLandscape: Joi.boolean(),
   }),
   waitFor: Joi.alternatives([
-    Joi.number().min(1).max(60000),
+    Joi.number().min(1).max(2000000),
     Joi.string().min(1).max(2000),
   ]),
   goto: Joi.object({
-    timeout: Joi.number().min(0).max(60000),
+    timeout: Joi.number().min(0).max(2000000),
     waitUntil: Joi.string().min(1).max(2000),
   }),
   pdf: Joi.object({
