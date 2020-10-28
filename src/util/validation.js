@@ -37,7 +37,7 @@ const sharedQuerySchema = Joi.object({
   'viewport.isMobile': Joi.boolean(),
   'viewport.hasTouch': Joi.boolean(),
   'viewport.isLandscape': Joi.boolean(),
-  'goto.timeout': Joi.number().min(0).max(60000),
+  'goto.timeout': Joi.number().min(0).max(2000000),
   'goto.waitUntil': Joi.string().min(1).max(2000),
   'pdf.scale': Joi.number().min(0).max(1000),
   'pdf.displayHeaderFooter': Joi.boolean(),
