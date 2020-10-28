@@ -26,7 +26,7 @@ const sharedQuerySchema = Joi.object({
   enableGPU: Joi.boolean(),
   ignoreHttpsErrors: Joi.boolean(),
   waitFor: Joi.alternatives([
-    Joi.number().min(1).max(60000),
+    Joi.number().min(1).max(2000000),
     Joi.string().min(1).max(2000),
   ]),
   cookies: Joi.array().items(cookieSchema),
